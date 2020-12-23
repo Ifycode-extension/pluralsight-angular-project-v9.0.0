@@ -9,11 +9,17 @@ import { AlbumContainer } from './album-container';
 })
 export class ProductService {
   private _albumUrl = '../assets/album.json';
+  private _productsUrl = '../assets/products.json';
 
   constructor(private _httpClient: HttpClient) { }
 
   getAlbum(id: number): Observable<AlbumContainer> {
     return this._httpClient.get(this._albumUrl)
     .pipe(map((response) => <AlbumContainer>response));
+  }
+
+  getProducts() {
+    return this._httpClient.get(this._productsUrl)
+    .pipe(map((response) => response));
   }
 }
