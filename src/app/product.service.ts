@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { AlbumContainer } from './album-container';
+import { Product } from './product';
 
 @Injectable({
   providedIn: 'root'
@@ -18,8 +19,8 @@ export class ProductService {
     .pipe(map((response) => <AlbumContainer>response));
   }
 
-  getProducts() {
+  getProducts(): Observable<Product> {
     return this._httpClient.get(this._productsUrl)
-    .pipe(map((response) => response));
+    .pipe(map((response) => <Product>response));
   }
 }
