@@ -1,6 +1,6 @@
-# Pluralsight Angular Project 9.0.0
+# Build An Album Store Product Page With Angular v9.0.0
 
-Pluralsight Angular Project reproduced with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0.
+[Pluralsight Angular Project](https://github.com/Ifycode/pluralsight-angular-project-v1.6.5) reproduced with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0.
 
 <!--
 ## Development server
